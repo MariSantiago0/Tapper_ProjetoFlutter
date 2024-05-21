@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:projeto_tapper/sobrepag.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MaterialApp (title: "App",
+      home: MyApp(),));
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -39,7 +42,11 @@ class _MyHomePageState extends State<MyHomePage> {
         leading: 
                IconButton(onPressed: () {} , icon:const Icon(Icons.home), ),
                 actions: [
-                  IconButton(onPressed: () {} , icon:const Icon(Icons.sports_esports) ),
+                  IconButton(onPressed: () {Navigator.push(
+context,
+MaterialPageRoute(builder:
+(context) => const sobrepag()),
+);} , icon:const Icon(Icons.sports_esports) ),
                   IconButton(onPressed: () {} , icon:const Icon(Icons.image) ),
                 ],
          title:SizedBox(height: 45,child:Image.asset('img/title.png',),),
@@ -55,9 +62,9 @@ class _MyHomePageState extends State<MyHomePage> {
               '  Tapper é um jogo lançado em 1984 e distribuído pela Sega onde o jogador entra na pele de um bartender e precisa atender os clientes o mais rápido possível.',
               style: TextStyle(
                 fontSize: 30,
-        foreground: Paint()
-          ..style = PaintingStyle.fill
-          ..color = const Color.fromRGBO(88, 134, 87, 1),
+                foreground: Paint()
+                ..style = PaintingStyle.fill
+                ..color = const Color.fromRGBO(88, 134, 87, 1),
               )
             ),
             
