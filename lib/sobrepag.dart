@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:projeto_tapper/main.dart';
 
-class sobrepag extends StatelessWidget {
-const sobrepag({super.key});
+class SobrePag extends StatelessWidget {
+const SobrePag({super.key});
 
 @override
   Widget build(BuildContext context) {
@@ -12,10 +12,14 @@ const sobrepag({super.key});
                 fontSize: 30,
                 foreground: Paint()
                 ..style = PaintingStyle.fill
-                ..color = Color.fromARGB(255, 255, 0, 0),
+                ..color = const Color.fromARGB(255, 255, 0, 0),
               )) ,
         leading: 
-               IconButton(onPressed: () {} , icon:const Icon(Icons.keyboard_return), ),
+               IconButton(onPressed: () {Navigator.push(
+context,
+MaterialPageRoute(builder:
+(context) => const MyApp()),
+);} , icon:const Icon(Icons.keyboard_return), ),
       ),
      
       body: Center(child: ListView(children:
@@ -40,7 +44,7 @@ const sobrepag({super.key});
             ),
 
         const Image(
-          image:AssetImage('img/atari.png'),
+          image:AssetImage('img/atari.png', ) ,  
           ),
         const Image(
           image:AssetImage('img/arcade.png'),
@@ -63,7 +67,7 @@ const sobrepag({super.key});
                 fontSize: 40,
                 foreground: Paint()
                 ..style = PaintingStyle.fill
-                ..color = Color.fromARGB(255, 255, 0, 0),
+                ..color = const Color.fromARGB(255, 255, 0, 0),
               )
             ),
 

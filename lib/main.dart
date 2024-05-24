@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:projeto_tapper/imgpag.dart';
 import 'package:projeto_tapper/sobrepag.dart';
 
 void main() {
@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-       scaffoldBackgroundColor: Color.fromARGB(255, 253, 234, 169),
-        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 109, 16, 0)),
+       scaffoldBackgroundColor: const Color.fromARGB(255, 253, 234, 169),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 109, 16, 0)),
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
@@ -45,16 +45,20 @@ class _MyHomePageState extends State<MyHomePage> {
                   IconButton(onPressed: () {Navigator.push(
 context,
 MaterialPageRoute(builder:
-(context) => const sobrepag()),
+(context) => const SobrePag()),
 );} , icon:const Icon(Icons.sports_esports) ),
-                  IconButton(onPressed: () {} , icon:const Icon(Icons.image) ),
+                  IconButton(onPressed: () {Navigator.push(
+context,
+MaterialPageRoute(builder:
+(context) => const ImgPag()),
+);} , icon:const Icon(Icons.image) ),
                 ],
          title:SizedBox(height: 45,child:Image.asset('img/title.png',),),
          centerTitle: true,
       ),
       body: Center(
         child: Padding(
-            padding: EdgeInsets.all(20.0), child:Column(
+            padding: const EdgeInsets.all(20.0), child:Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             
