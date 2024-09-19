@@ -5,5 +5,5 @@
  Mariana Santiago Matos e Gustavo Rocillo.
 
 ## Wiki da Elaboração
-- [Descrição do Desenvolvimento](https://github.com/MariSantiago0/Tapper_ProjetoFlutter/wiki/Descri%C3%A7%C3%A3o-do-Desenvolvimento)
+- [Elaboração do App](https://github.com/MariSantiago0/Tapper_ProjetoFlutter/wiki/Elabora%C3%A7%C3%A3o-do-App)
 - [Navegação de Telas](https://github.com/MariSantiago0/Tapper_ProjetoFlutter/wiki/Navega%C3%A7%C3%A3o-de-Telas)
