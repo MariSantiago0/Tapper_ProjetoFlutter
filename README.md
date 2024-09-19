@@ -1,16 +1,9 @@
-# projeto_tapper
+# Projeto Flutter do Jogo Tapper 1983
+ Projeto feito na escola ETEC Professor Basilides de Godoy - Ensino Médio com Habilitação Profissional Técnico em Programação de Jogos Digitais | Turma 3ºA de 2024.
 
-A new Flutter project.
+## Desenvolvedores
+ Mariana Santiago Matos e Gustavo Rocillo.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Wiki da Elaboração
+- [Descrição do Desenvolvimento](https://github.com/MariSantiago0/Tapper_ProjetoFlutter/wiki/Descri%C3%A7%C3%A3o-do-Desenvolvimento)
+- [Navegação de Telas](https://github.com/MariSantiago0/Tapper_ProjetoFlutter/wiki/Navega%C3%A7%C3%A3o-de-Telas)
