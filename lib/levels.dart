@@ -54,17 +54,17 @@ class LevelPag extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xffc80000),
-        iconTheme: const IconThemeData(color: Color(0xffffffff)),
+        backgroundColor: Color(0xffc80000),
+        iconTheme: IconThemeData(color: Color(0xffffffff)),
         flexibleSpace: Container(
           decoration: BoxDecoration(
-            color: const Color(0xffc80000),
+            color: Color(0xffc80000),
             boxShadow: [
               BoxShadow(
                 color: Colors.black.withOpacity(0.3),
                 spreadRadius: 0,
                 blurRadius: 10,
-                offset: const Offset(0, 4),
+                offset: Offset(0, 4),
               ),
             ],
           ),
@@ -73,8 +73,8 @@ class LevelPag extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            const SizedBox(height: 20),
-            const Center(
+            SizedBox(height: 20),
+            Center(
               child: Text(
                 'Fases',
                 style: TextStyle(
@@ -84,12 +84,12 @@ class LevelPag extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 20),
+            SizedBox(height: 20),
             Container(
               margin: const EdgeInsets.all(7),
               width: 300,
               decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 243, 217, 132),
+                color: Color.fromARGB(255, 243, 217, 132),
                 borderRadius: BorderRadius.circular(8),
               ),
               padding: const EdgeInsets.all(10),
@@ -105,7 +105,7 @@ class LevelPag extends StatelessWidget {
                       style: TextStyle(
                         fontFamily: faseSaloon.fonte,
                         fontSize: 20,
-                        color: const Color(0xffc80000),
+                        color: Color(0xffc80000),
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -122,7 +122,7 @@ class LevelPag extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 20),
+            SizedBox(height: 20),
             Center(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -130,7 +130,7 @@ class LevelPag extends StatelessWidget {
                   Container(
                     margin: const EdgeInsets.all(7),
                     decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 243, 217, 132),
+                      color: Color.fromARGB(255, 243, 217, 132),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     padding: const EdgeInsets.all(7),
@@ -143,7 +143,7 @@ class LevelPag extends StatelessWidget {
                           style: TextStyle(
                             fontFamily: faseSaloon.fonte,
                             fontSize: 20,
-                            color: const Color(0xffc80000),
+                            color: Color(0xffc80000),
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -153,7 +153,7 @@ class LevelPag extends StatelessWidget {
                               width: 90,
                               height: 90,
                               margin: const EdgeInsets.all(2),
-                              decoration: const BoxDecoration(
+                              decoration: BoxDecoration(
                                 image: DecorationImage(
                                   image: AssetImage('img/cowboyGreen.png'),
                                 ),
@@ -163,7 +163,7 @@ class LevelPag extends StatelessWidget {
                               width: 90,
                               height: 90,
                               margin: const EdgeInsets.all(2),
-                              decoration: const BoxDecoration(
+                              decoration: BoxDecoration(
                                 image: DecorationImage(
                                   image: AssetImage('img/cowboyBlue.png'),
                                 ),
@@ -177,7 +177,7 @@ class LevelPag extends StatelessWidget {
                               width: 90,
                               height: 90,
                               margin: const EdgeInsets.all(2),
-                              decoration: const BoxDecoration(
+                              decoration: BoxDecoration(
                                 image: DecorationImage(
                                   image: AssetImage('img/cowgirlPink.png'),
                                 ),
@@ -187,7 +187,7 @@ class LevelPag extends StatelessWidget {
                               width: 90,
                               height: 90,
                               margin: const EdgeInsets.all(2),
-                              decoration: const BoxDecoration(
+                              decoration: BoxDecoration(
                                 image: DecorationImage(
                                   image: AssetImage('img/cowboyPink.png'),
                                 ),
@@ -201,7 +201,7 @@ class LevelPag extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 20),
+            SizedBox(height: 20),
             Container(
               padding: const EdgeInsets.all(7),
               child: Column(
@@ -214,7 +214,7 @@ class LevelPag extends StatelessWidget {
                       fontFamily: faseSaloon.fonte,
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
-                      color: const Color(0xffc80000),
+                      color: Color(0xffc80000),
                     ),
                   ),
                   Container(
@@ -222,7 +222,7 @@ class LevelPag extends StatelessWidget {
                     height: 250,
                     margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
-                      image: const DecorationImage(
+                      image: DecorationImage(
                         image: AssetImage('img/saloonCenario.png'),
                       ),
                       borderRadius: BorderRadius.circular(30),
@@ -235,25 +235,25 @@ class LevelPag extends StatelessWidget {
               height: 4,
               margin: const EdgeInsets.all(20),
               decoration: BoxDecoration(
-                color: const Color(0xffc80000),
+                color: Color(0xffc80000),
                 boxShadow: [
                   BoxShadow(
                     color: Colors.black.withOpacity(0.3),
                     spreadRadius: 0,
                     blurRadius: 10,
-                    offset: const Offset(0, 4),
+                    offset: Offset(0, 4),
                   ),
                 ],
               ),
             ),
 
             // fase 2 sports bars
-            const SizedBox(height: 20),
+            SizedBox(height: 20),
             Container(
               margin: const EdgeInsets.all(7),
               width: 300,
               decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 243, 217, 132),
+                color: Color.fromARGB(255, 243, 217, 132),
                 borderRadius: BorderRadius.circular(8),
               ),
               padding: const EdgeInsets.all(10),
@@ -268,7 +268,7 @@ class LevelPag extends StatelessWidget {
                       style: TextStyle(
                         fontFamily: faseSportsbar.fonte,
                         fontSize: 20,
-                        color: const Color(0xffc80000),
+                        color: Color(0xffc80000),
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -285,7 +285,7 @@ class LevelPag extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 20),
+            SizedBox(height: 20),
             Center(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -293,7 +293,7 @@ class LevelPag extends StatelessWidget {
                   Container(
                     margin: const EdgeInsets.all(7),
                     decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 243, 217, 132),
+                      color: Color.fromARGB(255, 243, 217, 132),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     padding: const EdgeInsets.all(7),
@@ -306,7 +306,7 @@ class LevelPag extends StatelessWidget {
                           style: TextStyle(
                             fontFamily: faseSportsbar.fonte,
                             fontSize: 20,
-                            color: const Color(0xffc80000),
+                            color: Color(0xffc80000),
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -316,7 +316,7 @@ class LevelPag extends StatelessWidget {
                               width: 90,
                               height: 90,
                               margin: const EdgeInsets.all(2),
-                              decoration: const BoxDecoration(
+                              decoration: BoxDecoration(
                                 image: DecorationImage(
                                   image: AssetImage('img/football.png'),
                                 ),
@@ -326,7 +326,7 @@ class LevelPag extends StatelessWidget {
                               width: 90,
                               height: 90,
                               margin: const EdgeInsets.all(2),
-                              decoration: const BoxDecoration(
+                              decoration: BoxDecoration(
                                 image: DecorationImage(
                                   image: AssetImage('img/baseball.png'),
                                 ),
@@ -340,7 +340,7 @@ class LevelPag extends StatelessWidget {
                               width: 90,
                               height: 90,
                               margin: const EdgeInsets.all(2),
-                              decoration: const BoxDecoration(
+                              decoration: BoxDecoration(
                                 image: DecorationImage(
                                   image: AssetImage('img/basketball.png'),
                                 ),
@@ -350,7 +350,7 @@ class LevelPag extends StatelessWidget {
                               width: 90,
                               height: 90,
                               margin: const EdgeInsets.all(2),
-                              decoration: const BoxDecoration(
+                              decoration: BoxDecoration(
                                 image: DecorationImage(
                                   image: AssetImage('img/tennis.png'),
                                 ),
@@ -364,7 +364,7 @@ class LevelPag extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 20),
+            SizedBox(height: 20),
             Container(
               padding: const EdgeInsets.all(7),
               child: Column(
@@ -377,7 +377,7 @@ class LevelPag extends StatelessWidget {
                       fontFamily: faseSportsbar.fonte,
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
-                      color: const Color(0xffc80000),
+                      color: Color(0xffc80000),
                     ),
                   ),
                   Container(
@@ -385,7 +385,7 @@ class LevelPag extends StatelessWidget {
                     height: 250,
                     margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
-                      image: const DecorationImage(
+                      image: DecorationImage(
                         image: AssetImage('img/sportsbarCenario.png'),
                       ),
                       borderRadius: BorderRadius.circular(30),
@@ -395,25 +395,25 @@ class LevelPag extends StatelessWidget {
                     height: 4,
                     margin: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
-                      color: const Color(0xffc80000),
+                      color: Color(0xffc80000),
                       boxShadow: [
                         BoxShadow(
                           color: Colors.black.withOpacity(0.3),
                           spreadRadius: 0,
                           blurRadius: 10,
-                          offset: const Offset(0, 4),
+                          offset: Offset(0, 4),
                         ),
                       ],
                     ),
                   ),
 
                   // fase 3 punk bar
-                  const SizedBox(height: 20),
+                  SizedBox(height: 20),
                   Container(
                     margin: const EdgeInsets.all(7),
                     width: 300,
                     decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 243, 217, 132),
+                      color: Color.fromARGB(255, 243, 217, 132),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     padding: const EdgeInsets.all(10),
@@ -428,7 +428,7 @@ class LevelPag extends StatelessWidget {
                             style: TextStyle(
                               fontFamily: fasePunkbar.fonte,
                               fontSize: 20,
-                              color: const Color(0xffc80000),
+                              color: Color(0xffc80000),
                               fontWeight: FontWeight.bold,
                             ),
                           ),
@@ -445,7 +445,7 @@ class LevelPag extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(height: 20),
+                  SizedBox(height: 20),
                   Center(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -453,7 +453,7 @@ class LevelPag extends StatelessWidget {
                         Container(
                           margin: const EdgeInsets.all(7),
                           decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 243, 217, 132),
+                            color: Color.fromARGB(255, 243, 217, 132),
                             borderRadius: BorderRadius.circular(8),
                           ),
                           padding: const EdgeInsets.all(7),
@@ -466,7 +466,7 @@ class LevelPag extends StatelessWidget {
                                 style: TextStyle(
                                   fontFamily: fasePunkbar.fonte,
                                   fontSize: 20,
-                                  color: const Color(0xffc80000),
+                                  color: Color(0xffc80000),
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -476,7 +476,7 @@ class LevelPag extends StatelessWidget {
                                     width: 90,
                                     height: 90,
                                     margin: const EdgeInsets.all(2),
-                                    decoration: const BoxDecoration(
+                                    decoration: BoxDecoration(
                                       image: DecorationImage(
                                         image: AssetImage('img/spike.png'),
                                       ),
@@ -486,7 +486,7 @@ class LevelPag extends StatelessWidget {
                                     width: 90,
                                     height: 90,
                                     margin: const EdgeInsets.all(2),
-                                    decoration: const BoxDecoration(
+                                    decoration: BoxDecoration(
                                       image: DecorationImage(
                                         image: AssetImage('img/pin.png'),
                                       ),
@@ -500,7 +500,7 @@ class LevelPag extends StatelessWidget {
                                     width: 90,
                                     height: 90,
                                     margin: const EdgeInsets.all(2),
-                                    decoration: const BoxDecoration(
+                                    decoration: BoxDecoration(
                                       image: DecorationImage(
                                         image: AssetImage('img/punkgirl.png'),
                                       ),
@@ -510,7 +510,7 @@ class LevelPag extends StatelessWidget {
                                     width: 90,
                                     height: 90,
                                     margin: const EdgeInsets.all(2),
-                                    decoration: const BoxDecoration(
+                                    decoration: BoxDecoration(
                                       image: DecorationImage(
                                         image: AssetImage('img/purple.png'),
                                       ),
@@ -524,7 +524,7 @@ class LevelPag extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(height: 20),
+                  SizedBox(height: 20),
                   Container(
                     padding: const EdgeInsets.all(7),
                     child: Column(
@@ -537,7 +537,7 @@ class LevelPag extends StatelessWidget {
                             fontFamily: fasePunkbar.fonte,
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                            color: const Color(0xffc80000),
+                            color: Color(0xffc80000),
                           ),
                         ),
                         Container(
@@ -545,7 +545,7 @@ class LevelPag extends StatelessWidget {
                           height: 250,
                           margin: const EdgeInsets.all(10),
                           decoration: BoxDecoration(
-                            image: const DecorationImage(
+                            image: DecorationImage(
                               image: AssetImage('img/punkbarCenario.png'),
                             ),
                             borderRadius: BorderRadius.circular(30),
@@ -555,13 +555,13 @@ class LevelPag extends StatelessWidget {
                           height: 4,
                           margin: const EdgeInsets.all(20),
                           decoration: BoxDecoration(
-                            color: const Color(0xffc80000),
+                            color: Color(0xffc80000),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.black.withOpacity(0.3),
                                 spreadRadius: 0,
                                 blurRadius: 10,
-                                offset: const Offset(0, 4),
+                                offset: Offset(0, 4),
                               ),
                             ],
                           ),
@@ -571,12 +571,12 @@ class LevelPag extends StatelessWidget {
                   ),
 
                   // fase 4 alien bar
-                  const SizedBox(height: 20),
+                  SizedBox(height: 20),
                   Container(
                     margin: const EdgeInsets.all(7),
                     width: 300,
                     decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 243, 217, 132),
+                      color: Color.fromARGB(255, 243, 217, 132),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     padding: const EdgeInsets.all(10),
@@ -591,7 +591,7 @@ class LevelPag extends StatelessWidget {
                             style: TextStyle(
                               fontFamily: faseAlienbar.fonte,
                               fontSize: 20,
-                              color: const Color(0xffc80000),
+                              color: Color(0xffc80000),
                               fontWeight: FontWeight.bold,
                             ),
                           ),
@@ -608,7 +608,7 @@ class LevelPag extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(height: 20),
+                  SizedBox(height: 20),
                   Center(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -616,7 +616,7 @@ class LevelPag extends StatelessWidget {
                         Container(
                           margin: const EdgeInsets.all(7),
                           decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 243, 217, 132),
+                            color: Color.fromARGB(255, 243, 217, 132),
                             borderRadius: BorderRadius.circular(8),
                           ),
                           padding: const EdgeInsets.all(7),
@@ -629,7 +629,7 @@ class LevelPag extends StatelessWidget {
                                 style: TextStyle(
                                   fontFamily: faseAlienbar.fonte,
                                   fontSize: 20,
-                                  color: const Color(0xffc80000),
+                                  color: Color(0xffc80000),
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -639,7 +639,7 @@ class LevelPag extends StatelessWidget {
                                     width: 90,
                                     height: 90,
                                     margin: const EdgeInsets.all(2),
-                                    decoration: const BoxDecoration(
+                                    decoration: BoxDecoration(
                                       image: DecorationImage(
                                         image: AssetImage('img/alienred.png'),
                                       ),
@@ -649,7 +649,7 @@ class LevelPag extends StatelessWidget {
                                     width: 90,
                                     height: 90,
                                     margin: const EdgeInsets.all(2),
-                                    decoration: const BoxDecoration(
+                                    decoration: BoxDecoration(
                                       image: DecorationImage(
                                         image: AssetImage('img/aliensmall.png'),
                                       ),
@@ -663,7 +663,7 @@ class LevelPag extends StatelessWidget {
                                     width: 90,
                                     height: 90,
                                     margin: const EdgeInsets.all(2),
-                                    decoration: const BoxDecoration(
+                                    decoration: BoxDecoration(
                                       image: DecorationImage(
                                         image:
                                             AssetImage('img/alienpurple.png'),
@@ -674,7 +674,7 @@ class LevelPag extends StatelessWidget {
                                     width: 90,
                                     height: 90,
                                     margin: const EdgeInsets.all(2),
-                                    decoration: const BoxDecoration(
+                                    decoration: BoxDecoration(
                                       image: DecorationImage(
                                         image: AssetImage('img/aliengreen.png'),
                                       ),
@@ -688,7 +688,7 @@ class LevelPag extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(height: 20),
+                  SizedBox(height: 20),
                   Container(
                     padding: const EdgeInsets.all(7),
                     child: Column(
@@ -701,7 +701,7 @@ class LevelPag extends StatelessWidget {
                             fontFamily: faseAlienbar.fonte,
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                            color: const Color(0xffc80000),
+                            color: Color(0xffc80000),
                           ),
                         ),
                         Container(
@@ -709,7 +709,7 @@ class LevelPag extends StatelessWidget {
                           height: 250,
                           margin: const EdgeInsets.all(10),
                           decoration: BoxDecoration(
-                            image: const DecorationImage(
+                            image: DecorationImage(
                               image: AssetImage('img/alienbarCenario.png'),
                             ),
                             borderRadius: BorderRadius.circular(50),

@@ -43,8 +43,8 @@ class SobrePag extends StatelessWidget {
       length: 2, // Número de abas
       child: Scaffold(
         appBar: AppBar(
-          iconTheme: const IconThemeData(color: Color(0xffffffff)),
-          backgroundColor: const Color(0xffd40101),
+          iconTheme: IconThemeData(color: Color(0xffffffff)),
+          backgroundColor: Color(0xffd40101),
           bottom: const TabBar(
             tabs: [
               Tab(text: 'Sobre o Jogo'),
@@ -75,7 +75,7 @@ class SobrePag extends StatelessWidget {
                   children: [
                     Container(
                       decoration: BoxDecoration(
-                        color: const Color.fromARGB(255, 243, 217, 132),
+                        color: Color.fromARGB(255, 243, 217, 132),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       padding: const EdgeInsets.all(10),
@@ -98,7 +98,7 @@ class SobrePag extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                         foreground: Paint()
                           ..style = PaintingStyle.fill
-                          ..color = const Color(0xffd40101),
+                          ..color = Color(0xffd40101),
                       ),
                     ),
                     Text(
@@ -109,14 +109,14 @@ class SobrePag extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                         foreground: Paint()
                           ..style = PaintingStyle.fill
-                          ..color = const Color(0xffd40101),
+                          ..color = Color(0xffd40101),
                       ),
                     ),
                     Center(
                       child: Container(
                         width: 250, // largura desejada
                         height: 190, // altura desejada
-                        margin: const EdgeInsets.all(15),
+                        margin: EdgeInsets.all(15),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(
                               15), // Raio de borda uniforme
@@ -136,14 +136,14 @@ class SobrePag extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                         foreground: Paint()
                           ..style = PaintingStyle.fill
-                          ..color = const Color(0xffd40101),
+                          ..color = Color(0xffd40101),
                       ),
                     ),
                     Center(
                       child: Container(
                         width: 250, // largura desejada
                         height: 190, // altura desejada
-                        margin: const EdgeInsets.all(15),
+                        margin: EdgeInsets.all(15),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(
                               10), // Raio de borda uniforme
@@ -157,7 +157,7 @@ class SobrePag extends StatelessWidget {
                     ),
                     Container(
                       decoration: BoxDecoration(
-                        color: const Color.fromARGB(255, 243, 217, 132),
+                        color: Color.fromARGB(255, 243, 217, 132),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       padding: const EdgeInsets.all(15),
@@ -196,7 +196,7 @@ class SobrePag extends StatelessWidget {
                     ),
                     Container(
                       decoration: BoxDecoration(
-                        color: const Color.fromARGB(255, 243, 217, 132),
+                        color: Color.fromARGB(255, 243, 217, 132),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       padding: const EdgeInsets.all(15),

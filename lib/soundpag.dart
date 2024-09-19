@@ -53,17 +53,17 @@ class _SoundPagState extends State<SoundPag> {
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 60,
-        iconTheme: const IconThemeData(color: Color(0xffffffff)),
+        iconTheme: IconThemeData(color: Color(0xffffffff)),
         elevation: 0, // Remove a sombra padrão do AppBar
         flexibleSpace: Container(
           decoration: BoxDecoration(
-            color: const Color(0xffc80000),
+            color: Color(0xffc80000),
             boxShadow: [
               BoxShadow(
                 color: Colors.black.withOpacity(0.3),
                 spreadRadius: 0,
                 blurRadius: 10,
-                offset: const Offset(0, 4),
+                offset: Offset(0, 4),
               ),
             ],
           ),
@@ -71,7 +71,7 @@ class _SoundPagState extends State<SoundPag> {
       ),
       body: Center(
         child: ListView(
-          padding: const EdgeInsets.symmetric(vertical: 20),
+          padding: EdgeInsets.symmetric(vertical: 20),
           children: [
             Center(
               child: Text(
@@ -81,10 +81,10 @@ class _SoundPagState extends State<SoundPag> {
                     fontWeight: FontWeight.bold,
                     foreground: Paint()
                       ..style = PaintingStyle.fill
-                      ..color = const Color(0xffd40101)),
+                      ..color = Color(0xffd40101)),
               ),
             ),
-            const SizedBox(height: 50),
+            SizedBox(height: 50),
             Center(
               child: Column(
                 children: [
@@ -92,39 +92,39 @@ class _SoundPagState extends State<SoundPag> {
                     onPressed: () {
                       _runAudio('audios/tip_appear.mp3');
                     },
-                    label: const Text(
+                    label: Text(
                       "Tip Appear",
                       style: TextStyle(
                         color: Color(0xff000000), // Cor do texto
                         fontSize: 16,
                       ),
                     ),
-                    icon: const Icon(Icons.attach_money),
+                    icon: Icon(Icons.attach_money),
                     
                   ),
-                  const SizedBox(height: 10),
+                  SizedBox(height: 10),
                   ElevatedButton.icon(
                     onPressed: () {
                       _runAudio1('audios/tune_win.mp3');
                     },
-                    label: const Text(
+                    label: Text(
                       "Win Level Tune",
                       style: TextStyle(color: Color(0xff000000)),
                     ),
-                    icon: const Icon(Icons.notifications_active),
+                    icon: Icon(Icons.notifications_active),
                     
                   ),
-                  const SizedBox(height: 10),
+                  SizedBox(height: 10),
                   ElevatedButton.icon(
                     onPressed: () {
                       _runAudio2('audios/sfx_fill1.mp3');
                     },
-                    label: const Text(
+                    label: Text(
                       "Fill Beer",
                       style: TextStyle(color: Color(0xff000000)),
                     ),
-                    icon: const Icon(Icons.sports_bar),
-                  
+                    icon: Icon(Icons.sports_bar),
+                    
                   ),
                 ],
               ),
@@ -136,4 +136,4 @@ class _SoundPagState extends State<SoundPag> {
   }
 }
 
-void main() => runApp(const MaterialApp(home: SoundPag()));
+void main() => runApp(MaterialApp(home: SoundPag()));

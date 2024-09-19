@@ -38,11 +38,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false, 
       title: 'Flutter Demo',
       theme: ThemeData(
         fontFamily: 'Roboto',
         scaffoldBackgroundColor: const Color.fromARGB(255, 253, 234, 169),
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xffffffff)),
+        colorScheme: ColorScheme.fromSeed(seedColor: Color(0xffffffff)),
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
@@ -75,16 +76,16 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(60),
+        preferredSize: Size.fromHeight(60),
         child: Container(
           decoration: BoxDecoration(
-            color: const Color(0xffc80000),
+            color: Color(0xffc80000),
             boxShadow: [
               BoxShadow(
                 color: Colors.black.withOpacity(0.3),
                 spreadRadius: 0,
                 blurRadius: 10,
-                offset: const Offset(0, 4),
+                offset: Offset(0, 4),
               ),
             ],
           ),
@@ -118,7 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const SoundPag()),
+                      MaterialPageRoute(builder: (context) => SoundPag()),
                     );
                   },
                   icon: const Icon(Icons.audiotrack,
@@ -126,7 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ],
             ),
-            backgroundColor: const Color(0x00000000),
+            backgroundColor: Color(0x00000000),
             elevation: 0,
             centerTitle: true,
           ),
@@ -145,13 +146,13 @@ class _MyHomePageState extends State<MyHomePage> {
                     width: MediaQuery.of(context).size.width,
                     height: MediaQuery.of(context).size.width,
                     decoration: BoxDecoration(
-                      color: const Color(0xffd40101),
+                      color: Color(0xffd40101),
                       boxShadow: [
                         BoxShadow(
                           color: Colors.black.withOpacity(0.3),
                           spreadRadius: 0,
                           blurRadius: 10,
-                          offset: const Offset(0, 4),
+                          offset: Offset(0, 4),
                         ),
                       ],
                       shape: BoxShape.circle,
@@ -180,7 +181,7 @@ class _MyHomePageState extends State<MyHomePage> {
               width: 280,
               height: 95,
               margin: const EdgeInsets.all(10),
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('img/ttitle.png'),
                 ),
@@ -190,7 +191,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Container(
             margin: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: const Color.fromARGB(255, 243, 217, 132),
+              color: Color.fromARGB(255, 243, 217, 132),
               borderRadius: BorderRadius.circular(8),
             ),
             padding: const EdgeInsets.all(15),
